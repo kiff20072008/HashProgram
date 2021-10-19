@@ -7,7 +7,7 @@
 #include "strConstants.hpp"
 #include "HashCreator.hpp"
 
-int parseProgramOptions(int argc, char **argv, std::string &path_to_input_file, std::string &path_to_output_file,
+int parseProgramOptions(const int argc, char **argv, std::string &path_to_input_file, std::string &path_to_output_file,
                         unsigned long long &block_size, const hashCreator::LoggerPtr &logger)
 {
     // Create program options handler

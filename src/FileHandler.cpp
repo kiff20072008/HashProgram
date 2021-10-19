@@ -44,7 +44,7 @@ namespace hashCreator {
         map_of_file_to_hash_ = std::make_shared<boost::interprocess::file_mapping>(file_name_.c_str(), file_open_mode_);
     }
 
-    std::string FileHandler::read(long long offset, unsigned long long bytes_to_read)
+    std::string FileHandler::read(const long long offset, const unsigned long long bytes_to_read)
     {
         if (openRead != open_mode_)
         {
